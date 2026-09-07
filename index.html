@@ -16,6 +16,7 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1584714816709513');
+fbq('init', '3931504707144753');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
@@ -29,7 +30,7 @@ src="https://www.facebook.com/tr?id=1584714816709513&ev=PageView&noscript=1"
         height: 100dvh;
         width: 100%;
         background: #ffffff; /* พื้นหลังสีขาว */
-        color: #1a1a1a;     /* สีตัวอักษรหลัก */
+        color: #000000;      /* สีตัวอักษรหลักเป็นสีดำ */
         font-family: 'Noto Sans Thai', 'Inter', sans-serif;
         display: flex;
         justify-content: center;
@@ -38,7 +39,7 @@ src="https://www.facebook.com/tr?id=1584714816709513&ev=PageView&noscript=1"
       
       .content {
         width: 100%;
-        max-width: 400px;
+        max-width: 420px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -46,11 +47,11 @@ src="https://www.facebook.com/tr?id=1584714816709513&ev=PageView&noscript=1"
       }
       
       .logo-mark {
-        width: 90px;
-        height: 90px;
-        border-radius: 22px;
+        width: 100px;
+        height: 100px;
+        border-radius: 26px;
         background: #f0f9ff;
-        border: 1px solid #bae6fd;
+        border: 2px solid #bae6fd;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -59,34 +60,34 @@ src="https://www.facebook.com/tr?id=1584714816709513&ev=PageView&noscript=1"
       
       .brand-name {
         font-family: 'Inter', sans-serif;
-        font-size: 42px;
+        font-size: 52px; /* เพิ่มขนาดหัวข้อหลัก */
         font-weight: 900;
         letter-spacing: 1px;
-        color: #0ea5e9; /* ใช้สีฟ้าสว่าง (Sky Blue) สำหรับชื่อแบรนด์ */
+        color: #0ea5e9;
         margin-bottom: 6px;
       }
       
       .brand-sub {
-        font-size: 16px;
-        font-weight: 600;
-        color: #64748b;
-        letter-spacing: 5px;
+        font-size: 20px; /* เพิ่มขนาดตัวอักษรย่อย */
+        font-weight: 700;
+        color: #000000;  /* เปลี่ยนจากสีเทาเป็นสีดำ */
+        letter-spacing: 6px;
         margin-bottom: 35px;
       }
       
       @keyframes sky-pulse-light {
-        0%, 100% { box-shadow: 0 4px 15px rgba(14, 165, 233, 0.25); transform: scale(1); }
-        50% { box-shadow: 0 6px 20px rgba(14, 165, 233, 0.45); transform: scale(1.01); }
+        0%, 100% { box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3); transform: scale(1); }
+        50% { box-shadow: 0 8px 25px rgba(14, 165, 233, 0.5); transform: scale(1.02); }
       }
 
       .btn-line {
         width: 100%;
-        padding: 20px;
-        border-radius: 18px;
-        background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%); /* ปุ่มไล่ระดับสีฟ้าสว่าง */
+        padding: 22px;
+        border-radius: 20px;
+        background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
         color: #ffffff;
-        font-size: 20px;
-        font-weight: 800;
+        font-size: 24px; /* เพิ่มขนาดข้อความบนปุ่ม */
+        font-weight: 900;
         text-decoration: none;
         text-align: center;
         margin-bottom: 25px;
@@ -96,21 +97,32 @@ src="https://www.facebook.com/tr?id=1584714816709513&ev=PageView&noscript=1"
         border: none;
       }
       
-      .line-id { font-size: 16px; margin-bottom: 20px; color: #334155; }
-      .line-id strong { color: #0ea5e9; }
+      .line-id { 
+        font-size: 20px; /* เพิ่มขนาด LINE ID */
+        margin-bottom: 20px; 
+        color: #000000;  /* เปลี่ยนเป็นสีดำ */
+      }
+      .line-id strong { 
+        color: #0ea5e9; 
+        font-size: 22px;
+      }
       
       .fbiab {
-        font-size: 14px;
-        color: #64748b;
+        font-size: 17px; /* เพิ่มขนาดคำแนะนำ */
+        color: #000000;  /* เปลี่ยนจากสีเทาเป็นสีดำ */
         text-align: center;
         line-height: 1.6;
         margin-bottom: 25px;
+        font-weight: 500;
       }
-      .blue-text { color: #0ea5e9; font-weight: 700; }
+      .blue-text { 
+        color: #0ea5e9; 
+        font-weight: 800; 
+      }
       
       .qr-container {
-        width: 190px;
-        height: 190px;
+        width: 200px;
+        height: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -124,9 +136,9 @@ src="https://www.facebook.com/tr?id=1584714816709513&ev=PageView&noscript=1"
     </style>
   </head>
   <body>
-   <div class="content">
+    <div class="content">
       <div class="logo-mark">
-        <svg width="45" height="45" viewBox="0 0 42 42" fill="none">
+        <svg width="50" height="50" viewBox="0 0 42 42" fill="none">
           <path d="M21 6L6 36M21 6L36 36M12 26H30" stroke="#0ea5e9" stroke-width="4" stroke-linecap="round"/>
         </svg>
       </div>
@@ -139,7 +151,7 @@ src="https://www.facebook.com/tr?id=1584714816709513&ev=PageView&noscript=1"
       <p class="fbiab">หาก LINE ไม่เปิด ให้แตะ <span class="blue-text">···</span> มุมขวาบน<br/>เลือก <span class="blue-text">"เปิดในเบราว์เซอร์"</span></p>
       
       <div class="qr-container">
-        <img src="https://qr-official.line.me/gs/M_758fimci_GW.png?oat_content=qr">
+        <img src="https://qr-official.line.me/gs/M_758fimci_GW.png?oat_content=qr" alt="LINE QR Code">
       </div>
     </div>
 
