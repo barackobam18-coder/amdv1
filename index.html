@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- บังคับระบบมือถือและแถบสถานะส่วนบนให้เป็นสีขาวเสมอ -->
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#ffffff" />
     <title>🟢กำลังใช้งาน 353,446 คน</title>
     
 <!-- Meta Pixel Code -->
@@ -15,26 +18,37 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1584714816709513');
 fbq('init', '3931504707144753');
+fbq('init', '3210614809148682');
+fbq('init', '1400741562015876');
+fbq('init', '1584714816709513');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1584714816709513&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=3931504707144753&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
-    <style>
-      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<!-- End Meta Pixel Code -->    <style>
+      :root {
+        color-scheme: light; /* บังคับให้เบราว์เซอร์ใช้ธีมสว่าง ป้องกันการดรอปแสง */
+      }
+
+      *, *::before, *::after { 
+        box-sizing: border-box; 
+        margin: 0; 
+        padding: 0; 
+      }
       
       html, body {
-        height: 100dvh;
+        min-height: 100vh;
+        min-height: 100dvh;
         width: 100%;
-        background: #ffffff; /* พื้นหลังสีขาว */
-        color: #000000;      /* สีตัวอักษรหลักเป็นสีดำ */
+        background-color: #ffffff !important; /* ล็อกสีขาวบริสุทธิ์แบบเด็ดขาด */
+        color: #000000 !important;
         font-family: 'Noto Sans Thai', 'Inter', sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
+        -webkit-text-size-adjust: 100%;
       }
       
       .content {
@@ -60,7 +74,7 @@ src="https://www.facebook.com/tr?id=1584714816709513&ev=PageView&noscript=1"
       
       .brand-name {
         font-family: 'Inter', sans-serif;
-        font-size: 52px; /* เพิ่มขนาดหัวข้อหลัก */
+        font-size: 52px;
         font-weight: 900;
         letter-spacing: 1px;
         color: #0ea5e9;
@@ -68,9 +82,9 @@ src="https://www.facebook.com/tr?id=1584714816709513&ev=PageView&noscript=1"
       }
       
       .brand-sub {
-        font-size: 20px; /* เพิ่มขนาดตัวอักษรย่อย */
+        font-size: 20px;
         font-weight: 700;
-        color: #000000;  /* เปลี่ยนจากสีเทาเป็นสีดำ */
+        color: #000000;
         letter-spacing: 6px;
         margin-bottom: 35px;
       }
@@ -86,7 +100,7 @@ src="https://www.facebook.com/tr?id=1584714816709513&ev=PageView&noscript=1"
         border-radius: 20px;
         background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
         color: #ffffff;
-        font-size: 24px; /* เพิ่มขนาดข้อความบนปุ่ม */
+        font-size: 24px;
         font-weight: 900;
         text-decoration: none;
         text-align: center;
@@ -98,9 +112,9 @@ src="https://www.facebook.com/tr?id=1584714816709513&ev=PageView&noscript=1"
       }
       
       .line-id { 
-        font-size: 20px; /* เพิ่มขนาด LINE ID */
+        font-size: 20px; 
         margin-bottom: 20px; 
-        color: #000000;  /* เปลี่ยนเป็นสีดำ */
+        color: #000000; 
       }
       .line-id strong { 
         color: #0ea5e9; 
@@ -108,8 +122,8 @@ src="https://www.facebook.com/tr?id=1584714816709513&ev=PageView&noscript=1"
       }
       
       .fbiab {
-        font-size: 17px; /* เพิ่มขนาดคำแนะนำ */
-        color: #000000;  /* เปลี่ยนจากสีเทาเป็นสีดำ */
+        font-size: 17px; 
+        color: #000000; 
         text-align: center;
         line-height: 1.6;
         margin-bottom: 25px;
